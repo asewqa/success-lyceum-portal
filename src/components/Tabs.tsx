@@ -17,10 +17,30 @@ const TabsComponent = () => {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-4">Про Ліцей №17 "Успіх"</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 Ліцей №17 "Успіх" - це сучасний навчальний заклад, який забезпечує високоякісну освіту та всебічний розвиток учнів. 
                 Наша місія - підготувати успішних, творчих та відповідальних громадян України.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="border p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Наші цінності</h4>
+                  <ul className="list-disc list-inside text-gray-600">
+                    <li>Якісна освіта</li>
+                    <li>Індивідуальний підхід</li>
+                    <li>Розвиток талантів</li>
+                    <li>Інноваційні методи навчання</li>
+                  </ul>
+                </div>
+                <div className="border p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Наші досягнення</h4>
+                  <ul className="list-disc list-inside text-gray-600">
+                    <li>Високі результати ЗНО</li>
+                    <li>Перемоги в олімпіадах</li>
+                    <li>Успішні випускники</li>
+                    <li>Міжнародні проекти</li>
+                  </ul>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>
@@ -37,6 +57,10 @@ const TabsComponent = () => {
                 <div className="border-b pb-4">
                   <h4 className="font-semibold">Спортивні досягнення</h4>
                   <p className="text-gray-600">Команда ліцею виборола перше місце у міських змаганнях з волейболу</p>
+                </div>
+                <div className="border-b pb-4">
+                  <h4 className="font-semibold">Міжнародна співпраця</h4>
+                  <p className="text-gray-600">Підписано договір про співпрацю з європейськими навчальними закладами</p>
                 </div>
               </div>
             </CardContent>
@@ -68,6 +92,14 @@ const TabsComponent = () => {
                       <td className="p-2 border">Фізика</td>
                       <td className="p-2 border">Література</td>
                     </tr>
+                    <tr>
+                      <td className="p-2 border">9:25 - 10:10</td>
+                      <td className="p-2 border">Фізика</td>
+                      <td className="p-2 border">Англійська мова</td>
+                      <td className="p-2 border">Математика</td>
+                      <td className="p-2 border">Хімія</td>
+                      <td className="p-2 border">Інформатика</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -80,13 +112,17 @@ const TabsComponent = () => {
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-4">Наші вчителі</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="p-4 border rounded">
+                <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
                   <h4 className="font-semibold">Іванова Марія Петрівна</h4>
                   <p className="text-gray-600">Вчитель математики, вища категорія</p>
                 </div>
-                <div className="p-4 border rounded">
+                <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
                   <h4 className="font-semibold">Петренко Олена Василівна</h4>
                   <p className="text-gray-600">Вчитель української мови, вища категорія</p>
+                </div>
+                <div className="p-4 border rounded-lg hover:shadow-md transition-shadow">
+                  <h4 className="font-semibold">Коваленко Ірина Миколаївна</h4>
+                  <p className="text-gray-600">Вчитель англійської мови, вища категорія</p>
                 </div>
               </div>
             </CardContent>
@@ -105,6 +141,14 @@ const TabsComponent = () => {
                   <h4 className="font-semibold mb-2">Графік роботи:</h4>
                   <p>Понеділок - П'ятниця: 8:00 - 17:00</p>
                   <p>Субота, Неділя: Вихідний</p>
+                </div>
+                <div className="mt-4">
+                  <h4 className="font-semibold mb-2">Соціальні мережі:</h4>
+                  <div className="flex space-x-4">
+                    <a href="#" className="text-primary hover:text-primary/80">Facebook</a>
+                    <a href="#" className="text-primary hover:text-primary/80">Instagram</a>
+                    <a href="#" className="text-primary hover:text-primary/80">YouTube</a>
+                  </div>
                 </div>
               </div>
             </CardContent>

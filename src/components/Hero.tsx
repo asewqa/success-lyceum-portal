@@ -8,8 +8,12 @@ const Hero = () => {
           alt="Ліцей №17 Успіх" 
           className="mx-auto mb-8 max-w-2xl w-full animate-fade-in"
         />
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Ласкаво просимо до Ліцею №17 "Успіх"</h1>
-        <p className="text-xl md:text-2xl mb-8 animate-fade-in">Якісна освіта для успішного майбутнього</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
+          Ласкаво просимо до Ліцею №17 "Успіх"
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 animate-fade-in">
+          Якісна освіта для успішного майбутнього
+        </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
           <a 
             href="#about" 
